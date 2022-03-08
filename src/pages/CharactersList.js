@@ -2,6 +2,7 @@ import React from "react";
 import Loader from "../loader/Loader";
 import { useCharacters } from "./hooks/useCharacters";
 import { Link } from "react-router-dom";
+//import Mututation from "./Mututation";
 
 const CharactersList = () => {
 
@@ -13,6 +14,7 @@ const CharactersList = () => {
     return (
         <>
             <Link to="/search">Search</Link>
+            {/* <Mututation/> */}
             <div className="chr-list">
 
                 {data?.characters?.results?.map(character => {
